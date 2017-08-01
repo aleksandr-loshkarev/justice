@@ -1,0 +1,89 @@
+@media only screen and (max-width: 1024px){
+	a{
+		margin-bottom: 5px;
+	}
+
+	.navbar-toggler {
+	  display: inline-block;
+	  vertical-align: top;
+	  padding: 9px 10px;
+	  border: none;
+	  color: $brand-color;
+
+		.icon-bar {
+		  display: block;
+		  width: 22px;
+		  height: 2px;
+		  border-radius: 1px;
+		  background-color: currentcolor;
+		}
+
+		.icon-bar+.icon-bar {
+		  margin-top: 4px;
+		}
+	}
+
+	.navbar-collapse {
+	  display: none;
+	}
+
+	.is-show {
+		position: absolute;
+		display: block;
+		top: 78px;
+		left: 0;
+		right: 0;
+		z-index: 1;
+
+	  .navbar-nav{
+	  	margin: 0;
+	  	flex-direction: column;
+	  	width: 100%;
+	  	background-color: $secondary-color;
+
+	  	li{
+	  		padding-top: 10px;
+	  		padding-bottom: 5px;
+	  		text-align: center;
+
+	  		.buyer-panel{
+
+	  			li{
+	  				padding: 10px 15px 5px;
+
+	  				.search-panel{
+
+						.form-search{
+							position: static;
+							margin-left: -65px;
+						}
+					}
+	  			}
+	  		}
+	  	}
+	  }
+	}
+}
+
+@media only screen and (max-width: 768px){
+	h1{
+		font-size: 22px;
+		margin-bottom: 10px;
+	}
+
+	.item-slide{
+
+		.slider-body{
+
+			.slider-info{
+
+				.slider-more{
+
+					a{
+						font-size: 16px;
+					}
+				}
+			}
+		}
+	}
+}

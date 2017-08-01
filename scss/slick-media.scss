@@ -1,0 +1,24 @@
+@media only screen and (max-width: 768px){
+	.slick-prev{
+		left: -1000%;
+	}
+
+	.slick-next{
+		right: -1000%;
+	}
+
+	.slick-dots{
+		bottom: -30px;
+
+		li {
+
+			button:before{
+				border-color: #000;
+			}
+
+			&.slick-active button:before{
+				background-color: #000;
+			}
+		}
+	}
+}
