@@ -1,0 +1,17 @@
+.items-mansory{
+	margin: 0 -12px;
+
+	.item-mansory {
+		padding: 0 12px 24px;
+		width: 33.33%;
+
+		.mansory-image{
+			font-size: 0;
+			line-height: 0;
+
+			img{
+				height: auto;
+			}
+		}
+	}
+}

@@ -1,0 +1,45 @@
+.card{
+	margin: 0 -12px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	.card-information{
+		padding: 0 12px 50px;
+		width: 33.33%;
+
+		.card-header{
+			margin-bottom: 15px;
+
+			.card-image{
+				max-width: 100%;
+				font-size: 0;
+				line-height: 0;
+
+				img{
+					width: 100%;
+				}
+			}
+		}
+
+		.card-body{
+
+			.card-title{
+				display: inline-block;
+
+				h2{
+					font-size: 30px;
+					font-weight: 300;
+				}
+			}
+
+			.card-description{
+				display: inline-block;
+
+				p{
+					margin-bottom: 25px;
+				}
+			}
+		}
+	}
+}

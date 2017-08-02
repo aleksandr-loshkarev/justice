@@ -1,7 +1,71 @@
-.section-box{
+.header-box{
 	position: relative;
 	padding: 28px 0 13px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+}
+
+.section-week{
+	padding-top: 20px;
+}
+
+.section-visual{
+	padding: 48px 0 43px;
+}
+
+.footer-items{
+	margin: 0 -20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	.item-navbar{
+		padding: 0 20px 20px;
+
+		.item-title{
+			margin-bottom: 20px;
+		}
+
+		.item-body{
+
+			ul{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+
+				li{
+
+					a{
+						font-weight: 400;
+						color: $item-color;
+
+						&:hover{
+							opacity: .75;
+						}
+					}
+				}
+			}
+
+			.social-items{
+				margin: 0 -16px;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+
+				li{
+					padding: 0 16px;
+
+					a{
+
+						.social-item{
+							height: 18px;
+							fill: $item-color;
+						}
+					}
+				}
+			}
+		}
+	}
 }
