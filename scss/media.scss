@@ -127,8 +127,20 @@
 		}
 	}
 
-	.sidebar{
-		width: 50%;
+	.section-box{
+		flex-direction: column;
+		align-items: center;
+
+		.sidebar{
+			width: 50%;
+			margin: 0 0 15px;
+		}
+	}
+
+	.card-items{
+		.card-product{
+			width: 50%;
+		}
 	}
 }
 
@@ -175,8 +187,25 @@
 		}
 	}
 
-	.sidebar{
-		width: 100%;
+	.section-box{
+
+		.sidebar{
+			width: 100%;
+		}
+
+		.section-container{
+			.section-top{
+				.header-block{
+					justify-content: center;
+				}
+			}
+		}
+	}
+
+	.card-items{
+		.card-product{
+			width: 80%;
+		}
 	}
 }
 

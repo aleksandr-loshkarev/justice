@@ -1,0 +1,69 @@
+.modal_form {
+  max-width: 770px; 
+  max-height: 505px;
+  background: #fff;
+  position: fixed;
+  box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.25);
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: none;
+  opacity: 0;
+  z-index: 5;
+  padding: 0 42px 0 0;
+
+  .modal_close {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    cursor: pointer;
+    display: block;
+
+    &:before{
+      content: '';
+      width: 14px;
+      height: 1px;
+      position: absolute;
+      top: 5px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: $brand-color;
+      transform: rotate(45deg);
+    }
+
+    &:after{
+      content: '';
+      width: 14px;
+      height: 1px;
+      position: absolute;
+      top: 5px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: $brand-color;
+      transform: rotate(135deg);
+    }
+
+    &:hover{
+      opacity: .5;
+    }
+  }
+}
+
+.overlay {
+  z-index:3;
+  position:fixed;
+  background-color: $secondary-color;
+  opacity:0.8; /* нo немнoгo прoзрaчнa */
+  -moz-opacity:0.8; /* фикс прозрачности для старых браузеров */
+  filter:alpha(opacity=80);
+  width:100%; 
+  height:100%; /* рaзмерoм вo весь экрaн */
+  top:0; /* сверху и слевa 0, oбязaтельные свoйствa! */
+  left:0;
+  cursor:pointer;
+  display:none; /* в oбычнoм сoстoянии её нет) */
+}

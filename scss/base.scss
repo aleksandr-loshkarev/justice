@@ -88,6 +88,7 @@ h4{
 }
 
 h5{
+    margin: 0 0 5px;
     color: $brand-color;
     font-size: 18px;
     font-weight: 300;
@@ -134,4 +135,131 @@ a{
 
     background: url("../images/secondary-slider-image.jpg") no-repeat;
     background-size: cover;
+}
+
+.pagination-block{
+
+    .pagination{
+
+        a{
+            margin-bottom: 0;
+            vertical-align: middle;
+
+            .pagination-prev,
+            .pagination-next{
+                width: 6px;
+                height: 24px;
+            }
+        }
+
+        .page-numbers{
+            vertical-align: middle;
+        }
+    }
+}
+
+.breadcrumbs{
+    margin: 0 -5px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+
+    li{
+        padding: 0 5px;
+
+        &:before{
+            content:'/';
+        }
+
+        &:first-child:before{
+            content:'';
+        }
+
+        a{
+            font-size: 16px;
+            font-weight: 400;
+            text-transform: none;
+            font-variant: normal;
+
+            &:hover{
+                opacity: .5;
+            }
+        }
+
+        &.active{
+
+            a{
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+.sorting{
+    position: relative;
+
+    .sort-collapse{
+        margin-right: 15px;
+        margin-bottom: 0;
+        align-items: center;
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: none;
+        font-variant: normal;
+        position: relative;
+
+        &:before{
+            content: '';
+            position: absolute;
+            top: 30%;
+            right: -12px;
+            width: 12px;
+            height: 6px;
+            background: url("../images/svg/arrow-down.svg") no-repeat;
+        }
+    }
+
+    .sorting-list{
+        margin: 0;
+        padding: 10px;
+        list-style: none;
+        max-width: 100%;
+        display: none;
+        background-color: $secondary-color;
+        text-align: center;
+
+        &.is-show{
+            position: absolute;
+            display: block;
+            top: 25px;
+            left: 0;
+            right: 0;
+            z-index: 1;
+        }
+
+        li{
+            margin: 5px 0;
+            display: inline-block;
+
+            a{
+                margin: 0;
+                font-size: 16px;
+                font-weight: 400;
+                text-transform: none;
+                font-variant: normal;
+                text-decoration: underline;
+
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+.footer-block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 }

@@ -1,0 +1,77 @@
+.card-items{
+	margin: 0 -12px;
+
+	.card-product{
+		padding: 12px;
+		width: 33.33%;
+
+		.card-header{
+			margin-bottom: 10px;
+			position: relative;
+
+			.card-image{
+				max-width: 100%;
+
+				img{
+					width: 100%;
+				}
+			}
+
+			.card-hover{
+				display: none;
+
+				.card-top{
+					position: absolute;
+					top: 12px;
+					right: 12px;
+					width: 29px;
+					height: 29px;
+
+					a{
+						display: inline-block;
+						width: 29px;
+						height: 29px;
+						text-align: center;
+						font-size: 26px;
+						line-height: 1em;
+						font-weight: 400;
+						border: 1px solid $item-color;
+						border-radius: 14px;
+						color: $item-color;
+					}
+				}
+
+				.card-bottom{
+					padding: 16px 0;
+					position: absolute;
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: center;
+					right: 0;
+					left: 0;
+					bottom: 0;
+					background-color: $secondary-color;
+					opacity: 0.8;
+
+					a{
+						margin-bottom: 0;
+						color: $brand-color;
+						font-size: 18px;
+						font-weight: 300;
+						font-variant: small-caps;
+						text-transform: none;
+					}
+				}
+			}
+
+			&:hover .card-hover{
+				position: absolute;
+				display: block;
+				top: 0;
+				right: 0;
+				left: 0;
+				bottom: 0;
+			}
+		}
+	}
+}
