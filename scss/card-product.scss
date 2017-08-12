@@ -12,8 +12,15 @@
 			.card-image{
 				max-width: 100%;
 
-				img{
-					width: 100%;
+				a{
+					margin-bottom: 0;
+					font-size: 0;
+					line-height: 0;
+					display: inline-block;
+
+					img{
+						width: 100%;
+					}
 				}
 			}
 
@@ -26,6 +33,7 @@
 					right: 12px;
 					width: 29px;
 					height: 29px;
+					z-index: 1;
 
 					a{
 						display: inline-block;
@@ -38,6 +46,7 @@
 						border: 1px solid $item-color;
 						border-radius: 14px;
 						color: $item-color;
+					cursor: default;
 					}
 				}
 
@@ -52,6 +61,7 @@
 					bottom: 0;
 					background-color: $secondary-color;
 					opacity: 0.8;
+					z-index: 1;
 
 					a{
 						margin-bottom: 0;
@@ -71,6 +81,21 @@
 				right: 0;
 				left: 0;
 				bottom: 0;
+			}
+		}
+
+		.card-body{
+			position: absolute;
+			top: 0;
+			right: 0;
+			left: 0;
+			bottom: 0;
+			z-index: 0;
+			
+			.items-details{
+				margin-bottom: 0;
+				width: 100%;
+				height: 100%;
 			}
 		}
 	}
