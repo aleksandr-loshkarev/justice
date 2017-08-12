@@ -932,7 +932,8 @@ a {
     .card-product-modal .card-left .modal-slider .modal-slide .slide-image {
       max-width: 100%; }
       .card-product-modal .card-left .modal-slider .modal-slide .slide-image img {
-        width: 100%; }
+        width: 100%;
+        height: auto; }
   .card-product-modal .card-right {
     width: 50%; }
 
