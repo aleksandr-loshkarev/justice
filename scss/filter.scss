@@ -107,46 +107,6 @@
 				}
 		    }
 
-			.filter-size{
-				display: flex;
-				flex-direction: row;
-				justify-content: space-around;
-				flex-wrap: wrap;
-				padding: 10px 0;
-				margin: 0;
-				list-style: none;
-
-				li{
-					margin-bottom: 10px;
-					position: relative;
-					width: 24px;
-					text-align: center;
-
-					a{
-						margin-bottom: 3px;
-						vertical-align: middle;
-						font-size: 14px;
-						font-weight: 400;
-						color: $item-color;
-						font-variant: normal;
-
-						&:hover{
-							color: #010101;
-						}
-					}
-
-					&.active{
-						height: 24px;
-						border: 1px solid $brand-color;
-						border-radius: 12px;
-
-						a{
-							color: $brand-color;
-						}
-					}
-				}
-			}
-
 			.form-price{
 
 				.price-header{
@@ -195,6 +155,46 @@
 						}
 					}
 				}
+			}
+		}
+	}
+}
+
+.filter-size{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding: 10px 0;
+	margin: 0;
+	list-style: none;
+
+	li{
+		margin: 0 15px 10px 0;
+		position: relative;
+		width: 24px;
+		text-align: center;
+
+		a{
+			margin-bottom: 3px;
+			vertical-align: middle;
+			font-size: 14px;
+			font-weight: 400;
+			color: $item-color;
+			font-variant: normal;
+
+			&:hover{
+				color: #010101;
+			}
+		}
+
+		&.active{
+			height: 24px;
+			border: 1px solid $brand-color;
+			border-radius: 12px;
+
+			a{
+				color: $brand-color;
 			}
 		}
 	}

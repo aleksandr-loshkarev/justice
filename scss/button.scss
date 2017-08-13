@@ -21,4 +21,14 @@
 			padding: 11px 10px;
 		}
 	}
+
+	&.button-large{
+		text-align: center;
+
+		a{
+			margin: 0;
+			display: inline-block;
+			width: 100%;
+		}
+	}
 }

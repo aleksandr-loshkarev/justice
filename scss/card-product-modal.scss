@@ -23,6 +23,160 @@
 	}
 
 	.card-right{
+		padding: 12px 0 0 42px;
 		width: 50%;
+
+		.card-header{
+			margin-bottom: 30px;
+			display: flex;
+			justify-content: center;
+		}
+
+		h5{
+			font-weight: 400;
+			font-variant: normal;
+		}
+
+		.card-price{
+			display: inline-block;
+			vertical-align: top;
+		}
+
+		.card-description{
+			margin-bottom: 24px;
+			padding: 0 20px 0 0;
+			border-bottom: 1px solid $item-color;
+
+			p{
+				font-size: 14px;
+			}
+		}
+
+		.card-color{
+
+			.color-title{
+				margin: 0 0 10px;
+
+				p{
+					margin: 0;
+					font-size: 14px;
+					font-weight: 600;
+					color: $brand-color;
+
+					.name-color{
+						color: $item-color;
+						font-weight: 400;
+					}
+				}
+
+			}
+
+			.product-color{
+				padding: 0;
+				margin: 0 0 10px;
+				list-style: none;
+				display: flex;
+				flex-wrap: wrap;
+
+				li{
+					margin: 0;
+					font-size: 0;
+					line-height: 0;
+
+					.grey{
+						margin: 0;
+						width: 24px;
+						height: 24px;
+						background-color: #dddad5;
+					}
+				}
+			}
+		}
+	}
+}
+
+.item-size-filter{
+	display: flex;
+	justify-content: flex-start;
+
+	.filter-size{
+		flex-wrap: nowrap;
+	}
+}
+
+.card-size-qty{
+	display: flex;
+	justify-content: space-between;
+
+
+	.card-size{
+		
+		.tabs-size{
+			padding: 0;
+			border: none;
+
+			.tabs-title{
+				padding: 0;
+				border: none;
+				border-radius: 0;
+				background-color: $secondary-color;
+
+				li{
+					margin: 0 20px 0 0;
+					padding: 0;
+					border: none;
+					border-radius: 0;
+					background: $secondary-color;
+
+					a{
+						margin: 0;
+						padding: 0;
+						color: $item-color;
+						font-size: 14px;
+						font-weight: 400;
+						font-variant: normal;
+						text-transform: none;
+						text-decoration: underline;
+						outline: none;
+
+						&:hover{
+							text-decoration: none;
+						}
+					}
+				}
+
+				.ui-tabs-active{
+
+					a{
+						color: $brand-color;
+						text-decoration: none;
+					}
+				}
+			}
+
+			.tab-content{
+				padding: 0;
+			}
+		}
+	}
+
+	.card-qty{
+		display: flex;
+
+		.qty-title{
+			margin: 0 12px 0 0;
+		}
+
+		.qty-number{
+			display: flex;
+
+			.qty-left,
+			.qty-right{
+				fill: #000;
+				width: 6px;
+				height: 11px;
+				cursor: pointer;
+			}
+		}
 	}
 }

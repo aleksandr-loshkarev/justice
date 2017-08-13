@@ -1031,7 +1031,7 @@
 				});
 			});
 	</script>
-	
+
 	<script>
 		$(document).ready(function(){
 			$('.modal-slider').slick({
@@ -1040,101 +1040,185 @@
 		});
 	</script>
 
-	<div class="modal_form">
-		<span class="modal_close"></span>
-		<div class="md-content">
-			<div class="card-product-modal">
-				<div class="card-left">
-					<div class="modal-slider">
-						<div class="modal-slide">
-							<div class="slide-image">
-								<img src="images/product-image-03.jpg" alt="image description"></div>
-						</div>
-						<div class="modal-slide">
-							<div class="slide-image">
-								<img src="images/product-image-01.jpg" alt="image description"></div>
-						</div>
-						<div class="modal-slide">
-							<div class="slide-image">
-								<img src="images/product-image-02.jpg" alt="image description"></div>
-						</div>
-						<div class="modal-slide">
-							<div class="slide-image">
-								<img src="images/product-image-04.jpg" alt="image description"></div>
-						</div>
-						<div class="modal-slide">
-							<div class="slide-image">
-								<img src="images/product-image-05.jpg" alt="image description"></div>
-						</div>
-						<div class="modal-slide">
-							<div class="slide-image">
-								<img src="images/product-image-06.jpg" alt="image description"></div>
-						</div>
-					</div>
-				</div>
-				<div class="card-right">
-					<div class="card-header">
-						<div class="card-brands modal-brands">
-							<div class="card-image">
-								<img src="images/adidas-logo.png" alt="image description"></div>
-						</div>
-					</div>
-					<div class="card-body">
-						<div class="card-title card-full">
-							<h5>adidas STR Graphic Crew Sweatshirt </h5>
-						</div>
-						<div class="card-price">
-							<p>£45</p>
-						</div>
-						<div class="card-description">
-							<p>Casual-cool sweatshirt is brought to you by sportswear giant adidas and features a seriously soft knit in a long sleeve, crewneck silhouette. Finished with graphics at the front for a streetwear twist.</p>
-						</div>
-						<div class="card-color">
-							<div class="color-title">
-								<p>Color: <span class="name-color">Grey</span></p>
+	<script>
+		$( function() {
+			$( "#tabs" ).tabs();
+		} );
+	</script>
+
+	<script>
+		$(document).ready(function() {
+			$('.minus').click(function() {
+				var $input = $(this).parent().find('input');
+				var count = parseInt($input.val()) - 1;
+				count = count < 1 ? 1 : count;
+				$input.val(count);
+				$input.change();
+				return false;
+			});
+			$('.plus').click(function() {
+				var $input = $(this).parent().find('input');
+				$input.val(parseInt($input.val()) + 1);
+				$input.change();
+				return false;
+			});
+		});
+	</script>
+
+	<div class="md-modal">
+		<div class="modal_form">
+			<span class="modal_close"></span>
+			<div class="md-content">
+				<div class="card-product-modal">
+					<div class="card-left">
+						<div class="modal-slider">
+							<div class="modal-slide">
+								<div class="slide-image">
+									<img src="images/product-image-03.jpg" alt="image description"></div>
 							</div>
-							<ul class="product-color">
-								<li>
-									<a href="#"></a>
-								</li>
-							</ul>
+							<div class="modal-slide">
+								<div class="slide-image">
+									<img src="images/product-image-01.jpg" alt="image description"></div>
+							</div>
+							<div class="modal-slide">
+								<div class="slide-image">
+									<img src="images/product-image-02.jpg" alt="image description"></div>
+							</div>
+							<div class="modal-slide">
+								<div class="slide-image">
+									<img src="images/product-image-04.jpg" alt="image description"></div>
+							</div>
+							<div class="modal-slide">
+								<div class="slide-image">
+									<img src="images/product-image-05.jpg" alt="image description"></div>
+							</div>
+							<div class="modal-slide">
+								<div class="slide-image">
+									<img src="images/product-image-06.jpg" alt="image description"></div>
+							</div>
 						</div>
-						<div class="card-info">
-							<div class="card-size-qty">
-								<div class="card-size">
-									<div class="card-size-tabs">
-										<div id="tabs" class="tabs-size">
-											<ul>
-												<li></li>
-												<li></li>
-											</ul>
-											<div id="tabs-1"></div>
-											<div id="tabs-2"></div>
+					</div>
+					<div class="card-right">
+						<div class="card-header">
+							<div class="card-brands modal-brands">
+								<div class="card-image">
+									<img src="images/adidas-logo.png" alt="image description"></div>
+							</div>
+						</div>
+						<div class="card-body">
+							<div class="card-title card-full">
+								<h5>adidas STR Graphic Crew Sweatshirt</h5>
+							</div>
+							<div class="card-price">
+								<p>£45</p>
+							</div>
+							<div class="card-description">
+								<p>
+									Casual-cool sweatshirt is brought to you by sportswear giant adidas and features a seriously soft knit in a long sleeve, crewneck silhouette. Finished with graphics at the front for a streetwear twist.
+								</p>
+							</div>
+							<div class="card-color">
+								<div class="color-title">
+									<p>
+										Color:
+										<span class="name-color">Grey</span>
+									</p>
+								</div>
+								<ul class="product-color">
+									<li>
+										<a class="grey" href="#"></a>
+									</li>
+								</ul>
+							</div>
+							<div class="card-info">
+								<div class="card-size-qty">
+									<div class="card-size">
+										<div class="card-size-tabs">
+											<div id="tabs" class="tabs-size">
+												<ul class="tabs-title">
+													<li>
+														<a href="#tabs-1">Size</a>
+													</li>
+													<li>
+														<a href="#tabs-2">Size chart</a>
+													</li>
+												</ul>
+												<div class="tab-content" id="tabs-1">
+													<div class="item-size-filter">
+														<ul class="filter-size">
+															<li>
+																<a class="active-decor" href="#">XS</a>
+															</li>
+															<li class="active">
+																<a href="#">
+																	<span class="active-decor"></span>
+																	S
+																</a>
+															</li>
+															<li>
+																<a href="#">
+																	<span class="active-decor"></span>
+																	M
+																</a>
+															</li>
+															<li>
+																<a href="#">
+																	<span class="active-decor"></span>
+																	L
+																</a>
+															</li>
+															<li>
+																<a href="#">
+																	<span class="active-decor"></span>
+																	XL
+																</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+												<div class="tab-content" id="tabs-2"></div>
+											</div>
+										</div>
+									</div>
+									<div class="card-qty">
+										<div class="qty-title">
+											<p>Qty</p>
+										</div>
+										<div class="qty-description">
+											<div class="qty-number">
+												<span class="minus">
+													<svg class="qty-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88.89 147.55">
+														<polygon class="cls-1" points="73.78 147.55 88.89 132.44 30.23 73.78 88.89 15.11 73.78 0 0 73.78 73.78 147.55"/>
+													</svg>
+												</span>
+												<input class="form-group" type="text" value="1" size="10" />
+												<span class="plus">
+													<svg class="qty-right" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+												 viewBox="0 0 88.9 147.6" style="enable-background:new 0 0 88.9 147.6;" xml:space="preserve">
+														<polygon points="15.1,0 0,15.1 58.7,73.8 0,132.4 15.1,147.6 88.9,73.8 "/>
+													</svg>
+
+												</span>
+											</div>
 										</div>
 									</div>
 								</div>
-								<div class="card-qty">
-									<div class="number">
-										<span class="plus"></span>
-										<input type="text">
-										<span class="minus"></span>
-									</div>
-								</div>
 							</div>
 						</div>
-					</div>
-					<div class="card-footer">
-						<div class="card-button">
-							<div class="btn">
-								<a href="#"></a>
+						<div class="card-footer">
+							<div class="card-button">
+								<div class="button button-large">
+									<a href="#">Add to bag</a>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		<div class="overlay"></div>
 	</div>
-	<div class="overlay"></div>
 
+	
 </body>
 </html>
