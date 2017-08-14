@@ -1,16 +1,18 @@
 .modal_form {
   max-width: 770px; 
-  max-height: 505px;
+  max-height: 485px;
   background: #fff;
   position: fixed;
   box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.25);
+  top: 0;
+  bottom: 0;
   left: 0;
   right: 0;
   margin: auto;
   display: none;
   opacity: 0;
   z-index: 5;
-  padding: 0 42px 0 0;
+  padding: 0;
 
   .modal_close {
     width: 12px;
@@ -50,6 +52,10 @@
     &:hover{
       opacity: .5;
     }
+  }
+
+  .md-content{
+    padding-right: 5.45454545454545%;
   }
 }
 

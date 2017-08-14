@@ -124,10 +124,6 @@
 							    &:hover{
 							        opacity: .75;
 							    }
-
-							    &.is-active + .show-block{
-							    	display: block;
-							    }
 							}
 
 							.show-block{
@@ -194,3 +190,19 @@
 	}
 }
 
+.section-top{
+
+	.breadcrumbs-box{
+		display: flex;
+	}
+}
+
+.section-product{
+	.section-body{
+		margin-bottom: 33px;
+	}
+
+	.section-bottom{
+		margin-bottom: 45px;
+	}
+}

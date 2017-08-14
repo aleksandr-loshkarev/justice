@@ -27,8 +27,14 @@
 
 		a{
 			margin: 0;
+			padding: 14px;
 			display: inline-block;
 			width: 100%;
 		}
 	}
+}
+
+.button-right{
+	display: flex;
+	justify-content: flex-end;
 }

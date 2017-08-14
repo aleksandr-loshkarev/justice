@@ -676,6 +676,10 @@
 				jQuery(window).load(function(){
 	 			jQuery('.masonry').masonry({ columnWidth:310, itemSelector:'.box, .item' });
 				});
+
+				$container.imagesLoaded().progress( function() {
+					$container.masonry();
+				});  
 		</script>
 	</div>
 </body>

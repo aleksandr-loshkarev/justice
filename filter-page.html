@@ -198,20 +198,22 @@
 									<div class="hide-panel">
 										<div class="panel-left">
 											<div class="hide-filter">
+
 												<span class="hide-block" href="#js-hide-collapse" data-toggler>
 													<svg class="hide-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88.89 147.55">
 														<polygon class="cls-1" points="73.78 147.55 88.89 132.44 30.23 73.78 88.89 15.11 73.78 0 0 73.78 73.78 147.55"/>
 													</svg>
 													Hide filters
 												</span>
+
 												<span class="show-block">
 													Show filters
 													<svg class="show-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 													 viewBox="0 0 88.9 147.6" style="enable-background:new 0 0 88.9 147.6;" xml:space="preserve">
 														<polygon points="15.1,0 0,15.1 58.7,73.8 0,132.4 15.1,147.6 88.9,73.8 "/>
 													</svg>
-
 												</span>
+												
 											</div>
 										</div>
 										<div class="panel-right">
@@ -961,6 +963,15 @@
 		}
 		toggler();
 	</script>
+	<script>
+		$(document).ready(function () {
+		  var searchBlock = $('#form');
+		  $(document).on('click', '#open', function () {
+		    searchBlock.slideToggle();
+		    return false;
+		  });
+		});
+	</script>
 
 	<script>
 			$(document).ready(function(){
@@ -1074,27 +1085,27 @@
 						<div class="modal-slider">
 							<div class="modal-slide">
 								<div class="slide-image">
-									<img src="images/product-image-03.jpg" alt="image description"></div>
+									<img src="images/modal-slider-img.jpg" alt="image description"></div>
 							</div>
 							<div class="modal-slide">
 								<div class="slide-image">
-									<img src="images/product-image-01.jpg" alt="image description"></div>
+									<img src="images/modal-slider-img.jpg" alt="image description"></div>
 							</div>
 							<div class="modal-slide">
 								<div class="slide-image">
-									<img src="images/product-image-02.jpg" alt="image description"></div>
+									<img src="images/modal-slider-img.jpg" alt="image description"></div>
 							</div>
 							<div class="modal-slide">
 								<div class="slide-image">
-									<img src="images/product-image-04.jpg" alt="image description"></div>
+									<img src="images/modal-slider-img.jpg" alt="image description"></div>
 							</div>
 							<div class="modal-slide">
 								<div class="slide-image">
-									<img src="images/product-image-05.jpg" alt="image description"></div>
+									<img src="images/modal-slider-img.jpg" alt="image description"></div>
 							</div>
 							<div class="modal-slide">
 								<div class="slide-image">
-									<img src="images/product-image-06.jpg" alt="image description"></div>
+									<img src="images/modal-slider-img.jpg" alt="image description"></div>
 							</div>
 						</div>
 					</div>
@@ -1191,7 +1202,7 @@
 														<polygon class="cls-1" points="73.78 147.55 88.89 132.44 30.23 73.78 88.89 15.11 73.78 0 0 73.78 73.78 147.55"/>
 													</svg>
 												</span>
-												<input class="form-group" type="text" value="1" size="10" />
+												<input class="form-conclusion" type="text" value="1" size="10" />
 												<span class="plus">
 													<svg class="qty-right" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 												 viewBox="0 0 88.9 147.6" style="enable-background:new 0 0 88.9 147.6;" xml:space="preserve">

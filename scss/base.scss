@@ -197,6 +197,16 @@ a{
     }
 }
 
+.breadcrumbs-box{
+    li:before{
+        margin-right: 5px;
+    }
+
+    li:first-child:before{
+        margin-right: 0;
+    }
+}
+
 .sorting{
     position: relative;
 

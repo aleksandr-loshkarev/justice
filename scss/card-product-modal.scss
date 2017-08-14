@@ -7,11 +7,25 @@
 
 		.modal-slider{
 
+			.slick-prev{
+				left: 2%;
+
+				.slick-prev:before{
+					background: url("../images/svg/left-arrow.svg") no-repeat;
+				}
+			}
+
+			.slick-next{
+				right: 2%;
+			}
+
 			.modal-slide{
 
 
 				.slide-image{
 					max-width: 100%;
+					font-size: 0;
+					line-height: 0;
 
 					img{
 						width: 100%;
@@ -43,53 +57,53 @@
 		}
 
 		.card-description{
-			margin-bottom: 24px;
+			margin-bottom: 14px;
 			padding: 0 20px 0 0;
 			border-bottom: 1px solid $item-color;
 
 			p{
+				margin: 0 0 10px;
 				font-size: 14px;
 			}
 		}
+	}
+}
 
-		.card-color{
+.card-color{
 
-			.color-title{
-				margin: 0 0 10px;
+	.color-title{
+		margin: 0 0 10px;
 
-				p{
-					margin: 0;
-					font-size: 14px;
-					font-weight: 600;
-					color: $brand-color;
+		p{
+			margin: 0;
+			font-size: 14px;
+			font-weight: 600;
+			color: $brand-color;
 
-					.name-color{
-						color: $item-color;
-						font-weight: 400;
-					}
-				}
-
+			.name-color{
+				color: $item-color;
+				font-weight: 400;
 			}
+		}
+	}
 
-			.product-color{
-				padding: 0;
-				margin: 0 0 10px;
-				list-style: none;
-				display: flex;
-				flex-wrap: wrap;
+	.product-color{
+		padding: 0;
+		margin: 0 0 10px;
+		list-style: none;
+		display: flex;
+		flex-wrap: wrap;
 
-				li{
-					margin: 0;
-					font-size: 0;
-					line-height: 0;
+		li{
+			margin: 0;
+			font-size: 0;
+			line-height: 0;
 
-					.grey{
-						margin: 0;
-						width: 24px;
-						height: 24px;
-						background-color: #dddad5;
-					}
-				}
+			.grey{
+				margin: 0;
+				width: 24px;
+				height: 24px;
+				background-color: #dddad5;
 			}
 		}
 	}
@@ -119,6 +133,7 @@
 				padding: 0;
 				border: none;
 				border-radius: 0;
+				list-style: none;
 				background-color: $secondary-color;
 
 				li{

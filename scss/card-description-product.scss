@@ -1,0 +1,165 @@
+.card-description-product{
+	margin: 0;
+}
+
+.card-full-description-product{
+	display: flex;
+
+	.card-left{
+		margin: 0 3.84615384615385% 0 0;
+		width: 53.84615384615385%;
+	}
+
+	.card-right{
+		width: 42.30769230769231%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+}
+
+.brand-right{
+	display: flex;
+	justify-content: flex-end;
+}
+
+.card-gallery{
+	margin: 0 -6px;
+	display: flex;
+	flex-wrap: wrap;
+
+	.card-image{
+		width: 33.33%;
+		padding: 0 6px;
+		margin: 0 0 12px;
+		font-size: 0;
+		line-height: 0;
+	}
+}
+
+.card-full{
+
+	h5{
+		font-size: 20px;
+		font-weight: 400;
+		font-variant: normal;
+	}
+}
+
+.card-price{
+	p{
+		font-size: 18px;
+		font-variant: small-caps;
+	}
+}
+
+.card-tabs{
+	margin-bottom: 5px;
+
+	.tabs-description{
+
+		&.ui-tabs{
+			padding: 0;
+			border: none;
+
+			.ui-tabs-nav{
+				margin: 0 -11px 20px;
+				padding: 0;
+				border-radius: 0;
+
+				.ui-state-default{
+					margin: 0;
+					padding: 0 11px;
+					border: none;
+					background: #fff;
+					outline: none;
+
+					a{
+						margin: 0;
+						padding: 0;
+						font-size: 16px;
+						font-family: 'Open Sans';
+						font-weight: 400;
+						font-variant: normal;
+						text-transform: none;
+						outline: none;
+
+						color: #888;
+					}
+				}
+
+				.ui-state-active{
+
+					a{
+						color: #010101;
+						font-weight: 600;
+					}
+				}
+			}
+
+			.ui-widget-header{
+				border: none;
+				background: #fff;
+			}
+
+			.ui-tabs-panel{
+				padding: 0;
+			}
+		}
+	}
+}
+
+.card-brands{
+
+	.card-image{
+		margin: 0 0 10px;
+		display: flex;
+		justify-content: center;
+	}
+}
+
+.all-brands{
+	font-size: 18px;
+	font-weight: 400;
+	font-variant: normal;
+	text-transform: none;
+
+	color: $item-color;
+
+	&:hover{
+		color: $brand-color;
+	}
+}
+
+.pagination-block{
+	display: flex;
+	justify-content: space-between;
+}
+
+.pagination-item{
+
+	a{
+		font-size: 18px;
+		font-weight: 400;
+		text-transform: none;
+		font-variant: normal;
+
+		&:hover{
+			opacity: .5;
+		}
+	}
+}
+
+.pagination-footer{
+	margin-top: 3px;
+	width: auto;
+	height: 18px;
+}
+
+.pagination-prev{
+	margin-right: 10px;
+}
+
+.pagination-next{
+	margin-left: 10px;
+}
