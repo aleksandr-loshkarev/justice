@@ -448,7 +448,7 @@
 							<h2>Our Instagram</h2>
 						</div>
 						<div class="section-body">
-							<div class="items-mansory" id="mansory-list">
+							<div class="elements-gride items-mansory">
 								<div class="item-mansory">
 									<div class="mansory-image">
 										<img src="images/instagram-image-01.jpg" alt="image description"></div>
@@ -611,7 +611,7 @@
 		</footer>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script type="text/javascript" src="js/slick.min.js"></script>
-		<script src="js/masonry.pkgd.min.js"></script>
+		<script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script>
 		<script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
 		<script>
 			function toggler() {
@@ -667,16 +667,13 @@
 			});
 		</script>
 		<script>
-			var $container = $('#mansory-list');
-				
-				$container.masonry({
-				  columnWidth: '.item-mansory',
-				  itemSelector: '.item-mansory'
-				});
-
-				jQuery(window).load(function(){
-	 			jQuery('.masonry').masonry({ columnWidth:310, itemSelector:'.box, .item' });
-				});  
+			jQuery(document).ready(function($) {
+			    $('.elements-gride').masonry({
+			        // options
+			        itemSelector: '.item-mansory',
+			        columnWidth: '.item-mansory'
+			    });
+			});
 		</script>
 	</div>
 </body>
