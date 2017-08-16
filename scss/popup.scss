@@ -1,75 +1,43 @@
-.modal_form {
-  max-width: 770px; 
-  max-height: 485px;
-  background: #fff;
-  position: fixed;
-  box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.25);
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  display: none;
-  opacity: 0;
-  z-index: 5;
-  padding: 0;
-
-  .modal_close {
+#popup_this {
+    top: 50%;
+    left: 50%;
+    max-width: 800px;
+    text-align:center;
+    position: fixed;
+    background: #fff;
+    padding: 0 60px 0 0;
+}
+.b-close {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    cursor: pointer;
     width: 12px;
     height: 12px;
-    position: absolute;
-    top: 12px;
-    right: 12px;
-    cursor: pointer;
-    display: block;
 
     &:before{
-      content: '';
-      width: 14px;
-      height: 1px;
-      position: absolute;
-      top: 5px;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: $brand-color;
-      transform: rotate(45deg);
+        content: '';
+        position: absolute;
+        bottom: 5px;
+        left: 0;
+        transform: rotate(45deg);
+        width: 14px;
+        height: 2px;
+        background-color: $brand-color;
     }
 
     &:after{
-      content: '';
-      width: 14px;
-      height: 1px;
-      position: absolute;
-      top: 5px;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: $brand-color;
-      transform: rotate(135deg);
+        content: '';
+        position: absolute;
+        top: 5px;
+        left: 0;
+        transform: rotate(135deg);
+        width: 14px;
+        height: 2px;
+        background-color: $brand-color;
     }
 
     &:hover{
-      opacity: .5;
+        opacity: .5;
     }
-  }
-
-  .md-content{
-    padding-right: 5.45454545454545%;
-  }
-}
-
-.overlay {
-  z-index:3;
-  position:fixed;
-  background-color: $secondary-color;
-  opacity:0.8;
-  -moz-opacity:0.8;
-  filter:alpha(opacity=80);
-  width:100%; 
-  height:100%;
-  top:0;
-  left:0;
-  cursor:pointer;
-  display:none;
 }

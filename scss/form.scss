@@ -76,3 +76,29 @@
 		}
 	}
 }
+
+.form-mailing{
+	display: flex;
+	justify-content: center;
+
+	.form-group{
+	width: 78.26086956521739%;		
+	}
+
+	.form-group-button{
+		width: 21.73913043478261%;
+		height: 32px;	
+	}
+}
+
+.form-email{
+	padding: 5px;
+	height: 32px;
+	width: 100%;
+	border: 1px solid $item-color;
+	border-right: none;
+	font-size: 14px;
+	font-weight: 400;
+	color: $item-color;
+	text-transform: uppercase;
+}

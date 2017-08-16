@@ -4,40 +4,10 @@
 
 	.card-left{
 		width: 50%;
-
-		.modal-slider{
-
-			.slick-prev{
-				left: 2%;
-
-				.slick-prev:before{
-					background: url("../images/svg/left-arrow.svg") no-repeat;
-				}
-			}
-
-			.slick-next{
-				right: 2%;
-			}
-
-			.modal-slide{
-
-
-				.slide-image{
-					max-width: 100%;
-					font-size: 0;
-					line-height: 0;
-
-					img{
-						width: 100%;
-						height: auto;
-					}
-				}
-			}
-		}
 	}
 
 	.card-right{
-		padding: 12px 0 0 42px;
+		padding: 12px 0 17px 42px;
 		width: 50%;
 
 		.card-header{

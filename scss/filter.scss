@@ -51,110 +51,109 @@
 
 		.ac-body{
 			padding: 0 0 10px;
+		}
+	}
+}
 
-			.form-scroller{
-				padding: 10px 0;
-				height: 305px;
-				overflow: auto;
-		    	border-top: 1px solid $item-color;
+.form-scroller{
+	padding: 10px 0;
+	height: 305px;
+	overflow: auto;
+	border-top: 1px solid $item-color;
 
-				.form-item{
+		.form-item{
+			position: relative;
+
+			.form-checkbox{
+
+			&:not(cheked){
+				position: absolute;
+				opacity: 0;	
+
+				+ .form-control{
+					padding-left: 20px;
 					position: relative;
 
-					.form-checkbox{
-
-						&:not(cheked){
-							position: absolute;
-							opacity: 0;	
-
-							+ .form-control{
-								padding-left: 20px;
-								position: relative;
-
-								&:hover{
-									opacity: .75;
-								}
-
-								&:after{
-									content: '';
-									width: 12px;
-									height: 12px;
-									position: absolute;
-									top: 4px;
-									left: 0;
-									opacity: 0;
-									transition: all 0.2s ease 0s;
-									background-image: url("../images/svg/cross.svg")
-								}
-							}							
-						}
-
-						&:checked + .form-control{
-							color: $brand-color;
-
-							&:after{
-								opacity: 1;
-							}
-						}
+					&:hover{
+						opacity: .75;
 					}
 
-					.form-control{
-						color: $item-color;
-						font-weight: 400;
-						cursor: pointer;
-
+					&:after{
+						content: '';
+						width: 12px;
+						height: 12px;
+						position: absolute;
+						top: 4px;
+						left: 0;
+						opacity: 0;
+						transition: all 0.2s ease 0s;
+						background-image: url("../images/svg/cross.svg")
 					}
+				}							
+			}
+
+			&:checked + .form-control{
+				color: $brand-color;
+
+				&:after{
+					opacity: 1;
 				}
-		    }
+			}
+		}
 
-			.form-price{
+		.form-control{
+			color: $item-color;
+			font-weight: 400;
+			cursor: pointer;
+		}
+	}
+}
 
-				.price-header{
-					display: flex;
-					flex-direction: row;
-					flex-wrap: wrap;
+.form-price{
 
-					span{
-						color: $brand-color;
-					}
+	.price-header{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+
+		span{
+			color: $brand-color;
+		}
+	}
+
+	.price-body{
+		margin-bottom: 15px;
+
+		.price-range{
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+
+			.range-slider{
+				width: 90%;
+
+				.ui-widget-header{
+					background-color: $item-color;
 				}
+			}
+		}
+	}
 
-				.price-body{
-					margin-bottom: 15px;
+	.price-footer{
+		display: flex;
+		flex-direction: row;
 
-					.price-range{
-						display: flex;
-					flex-direction: row;
-						justify-content: center;
+		.price-group{
+			padding: 0 2.5%;
+			max-width: 45%;
 
-						.range-slider{
-							width: 90%;
-
-							.ui-widget-header{
-								background-color: $item-color;
-							}
-						}
-					}
-				}
-
-				.price-footer{
-					display: flex;
-					flex-direction: row;
-
-					.price-group{
-						padding: 0 2.5%;
-						max-width: 45%;
-
-						.price-txt{
-							width: 100%;
-							font-size: 16px;
-							padding: 5px;
-							font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-							color: $brand-color;
-							font-weight: 600;
-						}
-					}
-				}
+			.price-txt{
+				width: 100%;
+				font-size: 16px;
+				padding: 5px;
+				font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+				color: $brand-color;
+				font-weight: 600;
 			}
 		}
 	}

@@ -38,3 +38,20 @@
 	display: flex;
 	justify-content: flex-end;
 }
+
+
+.button-form{
+	background-color: $secondary-color;
+	border: 1px solid $brand-color;
+	height: 100%;
+	width: 100%;
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;
+	cursor: pointer;
+
+	&:hover{
+		background-color: $brand-color;
+		color: $secondary-color;
+	}
+}

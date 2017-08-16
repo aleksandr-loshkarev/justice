@@ -4,11 +4,12 @@
 	<meta charset="UTF-8">
 	<title>JUSTICE</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600,700" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/slick-slider.css"/>
 	<link rel="stylesheet" type="text/css" href="css/jquery-ui.css"/>
-</head>
+	<link rel="stylesheet" type="text/css" href="css/remodal.css">
+	<link rel="stylesheet" type="text/css" href="css/remodal-default-theme.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css"></head>
 <body>
 	<div class="wrapper">
 		<header class="header-page">
@@ -188,43 +189,98 @@
 								You can't have too many hoodies and sweatshirts. Our collection brings together our favourites, from simple black sweatshirts and plain hoodies to exclusives from Champion, adidas Originals and Nike Tech Fleece.
 							</p>
 						</div>
-					</div>
 
-					<div class="section section-box">
-						<aside class="sidebar">
+						<div class="section-footer">
+							<div class="section-left">
+								<div class="hide-panel">
+									<div class="panel-left">
+										<div class="hide-filter">
 
-							<div class="sidebar-body">
-								<div class="section-header">
-									<div class="hide-panel">
-										<div class="panel-left">
-											<div class="hide-filter">
+											<a class="hide-block" href=".js-hide-collapse" data-toggler>
+												<svg class="hide-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88.89 147.55">
+													<polygon class="cls-1" points="73.78 147.55 88.89 132.44 30.23 73.78 88.89 15.11 73.78 0 0 73.78 73.78 147.55"/>
+												</svg>
+												Hide filters
+											</a>
 
-												<span class="hide-block" href="#js-hide-collapse" data-toggler>
-													<svg class="hide-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88.89 147.55">
-														<polygon class="cls-1" points="73.78 147.55 88.89 132.44 30.23 73.78 88.89 15.11 73.78 0 0 73.78 73.78 147.55"/>
-													</svg>
-													Hide filters
-												</span>
-
-												<span class="show-block">
-													Show filters
-													<svg class="show-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-													 viewBox="0 0 88.9 147.6" style="enable-background:new 0 0 88.9 147.6;" xml:space="preserve">
-														<polygon points="15.1,0 0,15.1 58.7,73.8 0,132.4 15.1,147.6 88.9,73.8 "/>
-													</svg>
-												</span>
-												
-											</div>
 										</div>
-										<div class="panel-right">
-											<div class="quantity-products">
-												<p>11 Products</p>
-											</div>
+									</div>
+
+									<div class="panel-right">
+										<div class="quantity-products">
+											<p>11 Products</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="section-right">
+
+								<div class="header-block">
+									<div class="pagination-block">
+										<div class="pagination">
+											<a href="#">
+												<svg class="pagination-prev" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88.89 147.55">
+													<polygon points="73.78 147.55 88.89 132.44 30.23 73.78 88.89 15.11 73.78 0 0 73.78 73.78 147.55"/>
+												</svg>
+											</a>
+											<span class="page-numbers">1/1</span>
+											<a href="#">
+												<svg class="pagination-next" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 88.9 147.6" style="enable-background:new 0 0 88.9 147.6;" xml:space="preserve">
+													<polygon points="15.1,0 0,15.1 58.7,73.8 0,132.4 15.1,147.6 88.9,73.8 "/>
+												</svg>
+											</a>
+										</div>
+									</div>
+									<div class="breadcrumbs-block">
+										<ul class="breadcrumbs">
+											<li>
+												<a href="#">Men</a>
+											</li>
+											<li>
+												<a href="#">Tops</a>
+											</li>
+											<li class="active">
+												<a href="#">Hoodies & Sweatshirts</a>
+											</li>
+										</ul>
+									</div>
+									<div class="sorting-block">
+										<div class="sorting">
+											<a class="sort-collapse" href="#sorting-collapse" data-toggler>Sort by...</a>
+											<ul class="sorting-list" id="sorting-collapse">
+												<li>
+													<a href="#">Link</a>
+												</li>
+												<li>
+													<a href="#">Link</a>
+												</li>
+												<li>
+													<a href="#">Link</a>
+												</li>
+												<li>
+													<a href="#">Link</a>
+												</li>
+												<li>
+													<a href="#">Link</a>
+												</li>
+											</ul>
 										</div>
 									</div>
 								</div>
 
-								<div class="section-body" id="js-hide-collapse">
+							</div>
+
+						</div>
+					</div>
+
+					<div class="section section-box">
+						<aside class="sidebar js-hide-collapse">
+
+							<div class="sidebar-body">
+
+								<div class="section-body">
 
 									<div class="ac-container">
 										<button class="accordion">Brand</button>
@@ -438,61 +494,6 @@
 						</aside>
 
 						<div class="section section-container">
-							<div class="section-top">
-								<div class="header-block">
-									<div class="pagination-block">
-										<div class="pagination">
-											<a href="#">
-												<svg class="pagination-prev" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88.89 147.55">
-													<polygon points="73.78 147.55 88.89 132.44 30.23 73.78 88.89 15.11 73.78 0 0 73.78 73.78 147.55"/>
-												</svg>
-											</a>
-											<span class="page-numbers">1/1</span>
-											<a href="#">
-												<svg class="pagination-next" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 88.9 147.6" style="enable-background:new 0 0 88.9 147.6;" xml:space="preserve">
-													<polygon points="15.1,0 0,15.1 58.7,73.8 0,132.4 15.1,147.6 88.9,73.8 "/>
-												</svg>
-											</a>
-										</div>
-									</div>
-									<div class="breadcrumbs-block">
-										<ul class="breadcrumbs">
-											<li>
-												<a href="#">Men</a>
-											</li>
-											<li>
-												<a href="#">Tops</a>
-											</li>
-											<li class="active">
-												<a href="#">Hoodies & Sweatshirts</a>
-											</li>
-										</ul>
-									</div>
-									<div class="sorting-block">
-										<div class="sorting">
-											<a class="sort-collapse" href="#sorting-collapse" data-toggler>Sort by...</a>
-											<ul class="sorting-list" id="sorting-collapse">
-												<li>
-													<a href="#">Link</a>
-												</li>
-												<li>
-													<a href="#">Link</a>
-												</li>
-												<li>
-													<a href="#">Link</a>
-												</li>
-												<li>
-													<a href="#">Link</a>
-												</li>
-												<li>
-													<a href="#">Link</a>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
 
 							<div class="section-body">
 								<div class="card card-items">
@@ -502,13 +503,13 @@
 												<img src="images/product-image-01.jpg" alt="image description"></div>
 											<div class="card-hover">
 												<div class="card-top">
-													<a class="js-quick-shopping" href="#">+</a>
+													<a class="remodal__a js-quick-shopping" href="#modal">+</a>
 												</div>
 												<div class="card-body">
 													<a class="items-details" href="items-details-product.html"></a>
 												</div>
 												<div class="card-bottom">
-													<a class="js-quick-shopping" href="#">Quick Shop</a>
+													<a class="remodal__a  js-quick-shopping" href="#modal">Quick Shop</a>
 												</div>
 											</div>
 										</div>
@@ -947,8 +948,10 @@
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/slick.min.js"></script>
-	<script type="text/javascript" src="js/modernizr.custom.29473.js"></script>
 	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/remodal.min.js"></script>
+	<script type="text/javascript" src="js/jquery.modal.min.js"></script>
+	<script type="text/javascript" src="js/jquery.bpopup.min.js"></script>
 
 	<script>
 		function toggler() {
@@ -1020,28 +1023,7 @@
 			});
 		</script>
 
-	<script>
-		$(document).ready(function() {
-			$('a.js-quick-shopping').click( function(event){
-				event.preventDefault();
-				$('.overlay').fadeIn(400,
-				 	function(){
-						$('.modal_form') 
-							.css('display', 'block')
-							.animate({opacity: 1, top: '0', bottom: '0'}, 200);
-				});
-			});
-			$('.modal_close, #overlay').click( function(){
-				$('.modal_form')
-					.animate({opacity: 0, top: '45%'}, 200,
-						function(){
-							$(this).css('display', 'none');
-							$('.overlay').fadeOut(400);
-						}
-					);
-				});
-			});
-	</script>
+	<script></script>
 
 	<script>
 		$(document).ready(function(){
@@ -1076,160 +1058,211 @@
 		});
 	</script>
 
-	<div class="md-modal">
-		<div class="modal_form">
-			<span class="modal_close"></span>
-			<div class="md-content">
-				<div class="card-product-modal">
-					<div class="card-left">
-						<div class="modal-slider">
-							<div class="modal-slide">
-								<div class="slide-image">
-									<img src="images/modal-slider-img.jpg" alt="image description"></div>
-							</div>
-							<div class="modal-slide">
-								<div class="slide-image">
-									<img src="images/modal-slider-img.jpg" alt="image description"></div>
-							</div>
-							<div class="modal-slide">
-								<div class="slide-image">
-									<img src="images/modal-slider-img.jpg" alt="image description"></div>
-							</div>
-							<div class="modal-slide">
-								<div class="slide-image">
-									<img src="images/modal-slider-img.jpg" alt="image description"></div>
-							</div>
-							<div class="modal-slide">
-								<div class="slide-image">
-									<img src="images/modal-slider-img.jpg" alt="image description"></div>
-							</div>
-							<div class="modal-slide">
-								<div class="slide-image">
-									<img src="images/modal-slider-img.jpg" alt="image description"></div>
-							</div>
-						</div>
+	<script>
+		$( document ).ready(function() {
+		    $('#popup_this').bPopup();
+		});
+	</script>
+
+	<div class="remodal" data-remodal-id="modal">
+		<button data-remodal-action="close" class="remodal-close"></button>
+		<div class="card-product-modal">
+			<div class="card-left">
+				<div class="modal-slider">
+					<div class="modal-slide">
+						<div class="slide-image">
+							<img src="images/modal-slider-img.jpg" alt="image description"></div>
 					</div>
-					<div class="card-right">
-						<div class="card-header">
-							<div class="card-brands modal-brands">
-								<div class="card-image">
-									<img src="images/adidas-logo.png" alt="image description"></div>
-							</div>
+					<div class="modal-slide">
+						<div class="slide-image">
+							<img src="images/modal-slider-img.jpg" alt="image description"></div>
+					</div>
+					<div class="modal-slide">
+						<div class="slide-image">
+							<img src="images/modal-slider-img.jpg" alt="image description"></div>
+					</div>
+					<div class="modal-slide">
+						<div class="slide-image">
+							<img src="images/modal-slider-img.jpg" alt="image description"></div>
+					</div>
+					<div class="modal-slide">
+						<div class="slide-image">
+							<img src="images/modal-slider-img.jpg" alt="image description"></div>
+					</div>
+					<div class="modal-slide">
+						<div class="slide-image">
+							<img src="images/modal-slider-img.jpg" alt="image description"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="card-right">
+				<div class="card-header">
+					<div class="card-brands modal-brands">
+						<div class="card-image">
+							<img src="images/adidas-logo.png" alt="image description"></div>
+					</div>
+				</div>
+				<div class="card-body">
+					<div class="card-title card-full">
+						<h5>adidas STR Graphic Crew Sweatshirt</h5>
+					</div>
+					<div class="card-price">
+						<p>£45</p>
+					</div>
+					<div class="card-description">
+						<p>
+							Casual-cool sweatshirt is brought to you by sportswear giant adidas and features a seriously soft knit in a long sleeve, crewneck silhouette. Finished with graphics at the front for a streetwear twist.
+						</p>
+					</div>
+					<div class="card-color">
+						<div class="color-title">
+							<p>
+								Color:
+								<span class="name-color">Grey</span>
+							</p>
 						</div>
-						<div class="card-body">
-							<div class="card-title card-full">
-								<h5>adidas STR Graphic Crew Sweatshirt</h5>
-							</div>
-							<div class="card-price">
-								<p>£45</p>
-							</div>
-							<div class="card-description">
-								<p>
-									Casual-cool sweatshirt is brought to you by sportswear giant adidas and features a seriously soft knit in a long sleeve, crewneck silhouette. Finished with graphics at the front for a streetwear twist.
-								</p>
-							</div>
-							<div class="card-color">
-								<div class="color-title">
-									<p>
-										Color:
-										<span class="name-color">Grey</span>
-									</p>
-								</div>
-								<ul class="product-color">
-									<li>
-										<a class="grey" href="#"></a>
-									</li>
-								</ul>
-							</div>
-							<div class="card-info">
-								<div class="card-size-qty">
-									<div class="card-size">
-										<div class="card-size-tabs">
-											<div id="tabs" class="tabs-size">
-												<ul class="tabs-title">
+						<ul class="product-color">
+							<li>
+								<a class="grey" href="#"></a>
+							</li>
+						</ul>
+					</div>
+					<div class="card-info">
+						<div class="card-size-qty">
+							<div class="card-size">
+								<div class="card-size-tabs">
+									<div id="tabs" class="tabs-size">
+										<ul class="tabs-title">
+											<li>
+												<a href="#tabs-1">Size</a>
+											</li>
+											<li>
+												<a href="#tabs-2">Size chart</a>
+											</li>
+										</ul>
+										<div class="tab-content" id="tabs-1">
+											<div class="item-size-filter">
+												<ul class="filter-size">
 													<li>
-														<a href="#tabs-1">Size</a>
+														<a class="active-decor" href="#">XS</a>
+													</li>
+													<li class="active">
+														<a href="#">
+															<span class="active-decor"></span>
+															S
+														</a>
 													</li>
 													<li>
-														<a href="#tabs-2">Size chart</a>
+														<a href="#">
+															<span class="active-decor"></span>
+															M
+														</a>
+													</li>
+													<li>
+														<a href="#">
+															<span class="active-decor"></span>
+															L
+														</a>
+													</li>
+													<li>
+														<a href="#">
+															<span class="active-decor"></span>
+															XL
+														</a>
 													</li>
 												</ul>
-												<div class="tab-content" id="tabs-1">
-													<div class="item-size-filter">
-														<ul class="filter-size">
-															<li>
-																<a class="active-decor" href="#">XS</a>
-															</li>
-															<li class="active">
-																<a href="#">
-																	<span class="active-decor"></span>
-																	S
-																</a>
-															</li>
-															<li>
-																<a href="#">
-																	<span class="active-decor"></span>
-																	M
-																</a>
-															</li>
-															<li>
-																<a href="#">
-																	<span class="active-decor"></span>
-																	L
-																</a>
-															</li>
-															<li>
-																<a href="#">
-																	<span class="active-decor"></span>
-																	XL
-																</a>
-															</li>
-														</ul>
-													</div>
-												</div>
-												<div class="tab-content" id="tabs-2"></div>
 											</div>
 										</div>
-									</div>
-									<div class="card-qty">
-										<div class="qty-title">
-											<p>Qty</p>
-										</div>
-										<div class="qty-description">
-											<div class="qty-number">
-												<span class="minus">
-													<svg class="qty-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88.89 147.55">
-														<polygon class="cls-1" points="73.78 147.55 88.89 132.44 30.23 73.78 88.89 15.11 73.78 0 0 73.78 73.78 147.55"/>
-													</svg>
-												</span>
-												<input class="form-conclusion" type="text" value="1" size="10" />
-												<span class="plus">
-													<svg class="qty-right" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-												 viewBox="0 0 88.9 147.6" style="enable-background:new 0 0 88.9 147.6;" xml:space="preserve">
-														<polygon points="15.1,0 0,15.1 58.7,73.8 0,132.4 15.1,147.6 88.9,73.8 "/>
-													</svg>
-
-												</span>
-											</div>
-										</div>
+										<div class="tab-content" id="tabs-2"></div>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="card-footer">
-							<div class="card-button">
-								<div class="button button-large">
-									<a href="#">Add to bag</a>
+							<div class="card-qty">
+								<div class="qty-title">
+									<p>Qty</p>
+								</div>
+								<div class="qty-description">
+									<div class="qty-number">
+										<span class="minus">
+											<svg class="qty-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88.89 147.55">
+												<polygon class="cls-1" points="73.78 147.55 88.89 132.44 30.23 73.78 88.89 15.11 73.78 0 0 73.78 73.78 147.55"/>
+											</svg>
+										</span>
+										<input class="form-conclusion" type="text" value="1" size="10" />
+										<span class="plus">
+											<svg class="qty-right" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+													 viewBox="0 0 88.9 147.6" style="enable-background:new 0 0 88.9 147.6;" xml:space="preserve">
+												<polygon points="15.1,0 0,15.1 58.7,73.8 0,132.4 15.1,147.6 88.9,73.8 "/>
+											</svg>
+
+										</span>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+				<div class="card-footer">
+					<div class="card-button">
+						<div class="button button-large">
+							<a href="#">Add to bag</a>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
-		<div class="overlay"></div>
 	</div>
 
-	
+	<div id="popup_this" class="popup">
+		<span class="button b-close"></span>
+
+		<div class="card-mailing-pop-up">
+
+			<div class="card-left">
+				<div class="card-image">
+					<img src="images/mailing-list-image.jpg" alt="image description"></div>
+			</div>
+
+			<div class="card-right">
+
+				<div class="card-mailing">
+
+					<div class="card-title">
+						<span class="mailing-title">Join our mailing list</span>
+					</div>
+
+					<div class="card-description">
+						<span class="mailing-description">
+							Join our mailing list for all the latest information  on product releases, competitions and special offers.
+						</span>
+					</div>
+
+					<div class="card-sale">
+						<span class="mailing-sale">Get 30% off your next order</span>
+					</div>
+
+					<div class="card-form-mailing">
+
+						<form action="#" class="form-mailing">
+
+							<div class="form-group">
+								<input class="form-email" type="email" placeholder="Enter your email address"></div>
+
+							<div class="form-group-button">
+								<button class="button-form">Sign up</button>
+							</div>
+
+						</form>
+
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+
 </body>
 </html>

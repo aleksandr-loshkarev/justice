@@ -83,110 +83,15 @@
 
 
 .section-box{
-	padding: 23px 0 48px;
+	padding: 0 0 48px;
 	display: flex;
+}
 
+.section-container{
+	width: 77.8142589118199%;
 
-	.sidebar{
-		margin-right: 4.8780487804878%;
-		width: 17.3076923076923%;
-		
-		.sidebar-body{
-
-			.section-header{
-
-				.hide-panel{
-					display: flex;
-					flex-direction: row;
-					justify-content: space-between;
-					flex-wrap: wrap;
-
-					.panel-left{
-						margin-bottom: 10px;
-
-						.hide-filter{
-							
-							.hide-block{
-								font-size: 16px;
-								font-weight: 400;
-								text-transform: none;
-								font-variant: normal;
-								cursor: pointer;
-
-								.hide-arrow{
-									margin-top: 4px;
-									margin-right: 3px;
-									width: 6px;
-									height: 12px;
-									fill: $brand-color;
-								}
-
-							    &:hover{
-							        opacity: .75;
-							    }
-							}
-
-							.show-block{
-								display: none;
-								font-size: 16px;
-								font-weight: 400;
-								text-transform: none;
-								font-variant: normal;
-								cursor: pointer;
-
-								.show-arrow{
-									margin-top: 4px;
-									margin-right: 3px;
-									width: 6px;
-									height: 12px;
-									fill: $brand-color;
-								}
-
-							    &:hover{
-						        opacity: .75;
-							    }
-							}
-						}
-
-					}
-
-					.panel-right{
-
-						.quantity-products{
-
-							p{
-								color: $brand-color;
-								font-weight: 700;
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-
-	.section-container{
-		width: 77.8142589118199%;
-
-		.section-top{
-			margin-bottom: 5px;
-
-			.header-block{
-				display: flex;
-				flex-direction: row;
-				justify-content: space-between;
-				flex-wrap: wrap;
-
-				.pagination-block,
-				.breadcrumbs-block{
-					margin: 0 15px 10px;
-				}
-			}
-		}
-
-		.section-body{
-			padding-top: 10px;
-		}
+	.section-body{
+		padding-top: 10px;
 	}
 }
 
@@ -204,5 +109,19 @@
 
 	.section-bottom{
 		margin-bottom: 45px;
+	}
+}
+
+.section-footer{
+	padding: 43px 0 0;
+	display: flex;
+
+	.section-left{
+		margin-right: 4.8780487804878%;
+		width: 17.3076923076923%;
+	}
+
+	.section-right{
+		width: 77.8142589118199%;
 	}
 }
