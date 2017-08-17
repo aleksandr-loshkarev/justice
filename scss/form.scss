@@ -91,14 +91,16 @@
 	}
 }
 
-.form-email{
-	padding: 5px;
-	height: 32px;
-	width: 100%;
-	border: 1px solid $item-color;
-	border-right: none;
-	font-size: 14px;
-	font-weight: 400;
-	color: $item-color;
-	text-transform: uppercase;
+.form-group{
+	.form-email{
+		padding: 5px;
+		height: 32px;
+		width: 100%;
+		border: 1px solid $item-color;
+		border-right: none;
+		font-size: 14px;
+		font-weight: 400;
+		color: $item-color;
+		text-transform: uppercase;
+	}
 }

@@ -588,7 +588,7 @@ a {
     width: 21.73913043478261%;
     height: 32px; }
 
-.form-email {
+.form-group .form-email {
   padding: 5px;
   height: 32px;
   width: 100%;
@@ -638,10 +638,7 @@ a {
   margin: 0 -12px; }
   .card-items .card-product {
     padding: 12px;
-    width: 33.33%;
-    -webkit-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
-    transition: all 0.35s ease-in-out; }
+    max-width: 33.33%; }
     .card-items .card-product .card-header {
       margin-bottom: 10px;
       position: relative; }
@@ -686,7 +683,7 @@ a {
           justify-content: center;
           right: 0;
           left: 0;
-          bottom: 0;
+          bottom: -1px;
           background-color: #ffffff;
           opacity: 0.8;
           z-index: 1; }
