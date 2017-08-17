@@ -1,6 +1,36 @@
+$brand-color: #000000;
+$secondary-color: #ffffff;
+$item-color: #888888;
+
+.myModal{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 1050;
+    max-width: 800px;
+    margin: -250px 0 0 -355px;
+    overflow: auto;
+    background-color: #ffffff;
+    box-shadow: 0 3px 7px rgba(0,0,0,0.3);
+    background-clip: padding-box;
+}
+
+.modal-backdrop{
+	position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    opacity: .7;
+    background-color: $secondary-color;
+}
+
 .card-product-modal{
 	display: flex;
 	flex-wrap: wrap;
+	padding: 0 42px 0 0;
 
 	.card-left{
 		width: 50%;
