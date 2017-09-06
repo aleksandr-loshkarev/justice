@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css"></head>
 <body>
 	<div class="wrapper">
+
 		<header class="header-page">
 			<div class="container">
 				<div class="header-box">
@@ -84,7 +85,9 @@
 				</div>
 			</div>
 		</header>
+
 		<main class="main-page">
+			
 			<div class="section">
 				<div class="main-slider">
 					<div class="item-slide">
@@ -993,7 +996,7 @@
 			      panel.style.maxHeight = null;
 			    } else {
 			      panel.style.maxHeight = panel.scrollHeight + "px";
-			    } 
+			    }
 			  }
 			}
 		</script>
@@ -1019,12 +1022,18 @@
 			    $('#txtMaxAge').val(sliderDiv.slider('values', 1));
 			});
 		</script>
-
+	<script>
+		$(document).ready(function(){
+			$('.myModal').on('shown', function(){
+				$('.modal-slider').trigger('resize');
+			});
+		});
+	</script>
 
 	<script>
 		$(document).ready(function(){
 			$('.modal-slider').slick({
-			
+
 			});
 		});
 	</script>

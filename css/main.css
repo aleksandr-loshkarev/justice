@@ -583,9 +583,9 @@ a {
   -ms-flex-pack: center;
   justify-content: center; }
   .form-mailing .form-group {
-    width: 78.26086956521739%; }
+    width: 75%; }
   .form-mailing .form-group-button {
-    width: 21.73913043478261%;
+    width: 25%;
     height: 32px; }
 
 .form-group .form-email {

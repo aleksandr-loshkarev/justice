@@ -1,3 +1,7 @@
+$brand-color: #000000;
+$secondary-color: #ffffff;
+$item-color: #888888;
+
 .form-body{
 	max-width: 100%;
 
@@ -38,7 +42,7 @@
 
 					.form-body{
 
-						.form-email{ 
+						.form-email{
 							display: flex;
 							flex-direction: row;
 							justify-content: flex-start;
@@ -82,12 +86,12 @@
 	justify-content: center;
 
 	.form-group{
-	width: 78.26086956521739%;		
+	width: 75%;
 	}
 
 	.form-group-button{
-		width: 21.73913043478261%;
-		height: 32px;	
+		width: 25%;
+		height: 32px;
 	}
 }
 
